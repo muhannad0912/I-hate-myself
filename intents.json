@@ -1,0 +1,615 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": [
+          "Hi",
+          "Hello",
+          "How are you",
+          "Good morning",
+          "Good evening",
+          "Hey",
+          "What's up",
+          "Howdy"
+        ],
+        "responses": [
+          "Hello!",
+          "Hi there!",
+          "Greetings!",
+          "How can I help you?",
+          "Hey! How's it going?",
+          "Good day!"
+        ]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": [
+          "Bye",
+          "See you later",
+          "Goodbye",
+          "I am leaving",
+          "Have a good day",
+          "Catch you later",
+          "Farewell"
+        ],
+        "responses": [
+          "Goodbye!",
+          "See you later!",
+          "Have a nice day!",
+          "Bye! Come back again soon.",
+          "Take care!",
+          "Farewell!"
+        ]
+      },
+      {
+        "tag": "thanks",
+        "patterns": [
+          "Thanks",
+          "Thank you",
+          "That's helpful",
+          "Thanks a lot",
+          "I appreciate it",
+          "Much obliged",
+          "Many thanks"
+        ],
+        "responses": [
+          "You're welcome!",
+          "Happy to help!",
+          "Anytime!",
+          "My pleasure!",
+          "Glad I could assist!"
+        ]
+      },
+      {
+        "tag": "noanswer",
+        "patterns": [],
+        "responses": [
+          "Sorry, I don't understand that.",
+          "Can you please rephrase?",
+          "I'm not sure what you mean.",
+          "Could you clarify that?"
+        ]
+      },
+      {
+        "tag": "options",
+        "patterns": [
+          "What can you do",
+          "What services do you offer",
+          "What do you provide",
+          "How can you help me",
+          "What are your capabilities"
+        ],
+        "responses": [
+          "I can answer your questions and assist with various tasks.",
+          "I provide support and information on a range of topics.",
+          "I can help with many things, just ask!",
+          "I offer a variety of services, feel free to inquire!"
+        ]
+      },
+      {
+        "tag": "weather",
+        "patterns": [
+          "What's the weather like",
+          "Is it going to rain today",
+          "How's the weather",
+          "Weather forecast",
+          "Tell me the weather",
+          "Will it be sunny today"
+        ],
+        "responses": [
+          "The weather is nice today.",
+          "It looks like it might rain later.",
+          "It's sunny and warm.",
+          "I don't have the latest weather information.",
+          "Check your local weather app for accurate info."
+        ]
+      },
+      {
+        "tag": "name",
+        "patterns": [
+          "What is your name",
+          "Who are you",
+          "Can you tell me your name",
+          "What do you go by"
+        ],
+        "responses": [
+          "I'm a chatbot created to assist you.",
+          "I'm your virtual assistant.",
+          "You can call me ChatBot.",
+          "I am your helpful chatbot."
+        ]
+      },
+      {
+        "tag": "age",
+        "patterns": [
+          "How old are you",
+          "What is your age",
+          "Can you tell me your age",
+          "When were you created"
+        ],
+        "responses": [
+          "I am timeless.",
+          "I was created recently, but I learn fast.",
+          "Age is just a number for a bot like me.",
+          "I don't have an age in the traditional sense."
+        ]
+      },
+      {
+        "tag": "joke",
+        "patterns": [
+          "Tell me a joke",
+          "Do you know any jokes",
+          "Make me laugh",
+          "Can you tell a joke"
+        ],
+        "responses": [
+          "Why don't scientists trust atoms? Because they make up everything!",
+          "Why did the scarecrow win an award? Because he was outstanding in his field!",
+          "I told my computer I needed a break, and now it won't stop sending me Kit-Kats.",
+          "Why was the math book sad? Because it had too many problems."
+        ]
+      },
+      {
+        "tag": "time",
+        "patterns": [
+          "What time is it",
+          "Can you tell me the time",
+          "Do you know what time it is",
+          "What's the current time"
+        ],
+        "responses": [
+          "I'm not sure what time it is right now.",
+          "Time flies when you're chatting with me!",
+          "Check your watch or device for the current time.",
+          "It's always a good time to chat with you!"
+        ]
+      },
+      {
+        "tag": "date",
+        "patterns": [
+          "What's the date today",
+          "Do you know today's date",
+          "What's today's date",
+          "Tell me the date"
+        ],
+        "responses": [
+          "I'm not sure of the exact date.",
+          "Check your calendar for the date.",
+          "I'm not equipped to tell the date, but you can easily find it on your device.",
+          "Sorry, I don't have access to the current date."
+        ]
+      },
+      {
+        "tag": "food",
+        "patterns": [
+          "I'm hungry",
+          "Can you recommend a restaurant",
+          "Where should I eat",
+          "Suggest a place to eat",
+          "Any good restaurants nearby"
+        ],
+        "responses": [
+          "How about trying a local favorite?",
+          "There are many great places to eat nearby.",
+          "You might enjoy checking out a restaurant app for recommendations.",
+          "I'm sure there are some great options in your area."
+        ]
+      },
+      {
+        "tag": "book",
+        "patterns": [
+          "Can you suggest a book to read",
+          "What should I read",
+          "Any book recommendations",
+          "Recommend me a book",
+          "What book do you like"
+        ],
+        "responses": [
+          "How about a classic novel?",
+          "You might enjoy a popular bestseller.",
+          "Check out a book recommendation site for ideas.",
+          "Reading is a great way to relax, find something that interests you."
+        ]
+      },
+      {
+        "tag": "music",
+        "patterns": [
+          "What music should I listen to",
+          "Can you recommend a song",
+          "Suggest some music",
+          "What are some good songs",
+          "Any music recommendations"
+        ],
+        "responses": [
+          "How about listening to some classic rock?",
+          "Check out the latest hits on a music streaming app.",
+          "You might enjoy some relaxing instrumental music.",
+          "Music is a personal choice, find something that resonates with you."
+        ]
+      },
+      {
+        "tag": "movie",
+        "patterns": [
+          "Recommend a movie",
+          "What movie should I watch",
+          "Can you suggest a film",
+          "Any good movies to watch",
+          "What are some good films"
+        ],
+        "responses": [
+          "How about a classic film?",
+          "Check out the latest blockbuster.",
+          "You might enjoy a popular streaming series.",
+          "Watching a movie is a great idea, find something that interests you."
+        ]
+      },
+      {
+        "tag": "news",
+        "patterns": [
+          "What's in the news",
+          "Tell me the latest news",
+          "Any news updates",
+          "What's happening in the world",
+          "Give me some news"
+        ],
+        "responses": [
+          "Check out the latest headlines on a news app.",
+          "You can find the latest news on various news websites.",
+          "There are many news updates available online.",
+          "Staying informed is important, find a reliable news source."
+        ]
+      },
+      {
+        "tag": "sports",
+        "patterns": [
+          "What's the latest sports news",
+          "Any sports updates",
+          "Tell me the sports news",
+          "What's happening in sports",
+          "Give me some sports news"
+        ],
+        "responses": [
+          "Check out the latest sports headlines on a sports app.",
+          "You can find the latest sports news on various websites.",
+          "There are many sports updates available online.",
+          "Staying informed about sports is great, find a reliable source."
+        ]
+      },
+      {
+        "tag": "health",
+        "patterns": [
+          "How to stay healthy",
+          "Give me health tips",
+          "Any advice on health",
+          "How to maintain good health",
+          "What are some health tips"
+        ],
+        "responses": [
+          "Regular exercise is important for staying healthy.",
+          "Eating a balanced diet helps maintain good health.",
+          "Staying hydrated is crucial for health.",
+          "Make sure to get enough sleep for your well-being."
+        ]
+      },
+      {
+        "tag": "fitness",
+        "patterns": [
+          "How to stay fit",
+          "Give me fitness tips",
+          "Any advice on fitness",
+          "How to maintain fitness",
+          "What are some fitness tips"
+        ],
+        "responses": [
+          "Regular workouts help maintain fitness.",
+          "Staying active throughout the day is important.",
+          "Find a fitness routine that works for you.",
+          "Consistency is key to staying fit."
+        ]
+      },
+      {
+        "tag": "technology",
+        "patterns": [
+          "What's new in technology",
+          "Any tech updates",
+          "Tell me the latest in tech",
+          "What's happening in technology",
+          "Give me some tech news"
+        ],
+        "responses": [
+          "Check out the latest tech news on a tech website.",
+          "You can find the latest updates on various tech blogs.",
+          "There are many tech news sources available online.",
+          "Staying updated on technology is important, find a reliable source."
+        ]
+      },
+      {
+        "tag": "travel",
+        "patterns": [
+          "Recommend a travel destination",
+          "Where should I travel",
+          "Suggest a place to visit",
+          "Any good travel destinations",
+          "What are some good places to travel"
+        ],
+        "responses": [
+          "How about visiting a popular tourist destination?",
+          "There are many beautiful places to travel.",
+          "You might enjoy exploring a new country.",
+          "Traveling is a great way to experience new cultures."
+        ]
+      },
+      {
+        "tag": "education",
+        "patterns": [
+          "How to improve my skills",
+          "Give me education tips",
+          "Any advice on learning",
+          "How to enhance my knowledge",
+          "What are some learning tips"
+        ],
+        "responses": [
+          "Consistent practice is key to improving skills.",
+          "Learning new things regularly helps enhance knowledge.",
+          "Using different resources can aid in better understanding.",
+          "Staying curious and open to new information is important."
+        ]
+      },
+      {
+        "tag": "career",
+        "patterns": [
+          "How to advance my career",
+          "Give me career tips",
+          "Any advice on career growth",
+          "How to improve my career",
+          "What are some career tips"
+        ],
+        "responses": [
+          "Setting clear goals helps in career advancement.",
+          "Continuous learning is important for career growth.",
+          "Networking can open up new career opportunities.",
+          "Staying updated with industry trends is crucial."
+        ]
+      },
+      {
+        "tag": "finance",
+        "patterns": [
+          "How to manage my finances",
+          "Give me finance tips",
+          "Any advice on saving money",
+          "How to improve my financial health",
+          "What are some finance tips"
+        ],
+        "responses": [
+          "Creating a budget helps manage finances.",
+          "Saving regularly is important for financial health.",
+          "Investing wisely can improve financial stability.",
+          "Avoiding unnecessary expenses helps save money."
+        ]
+      },
+      {
+        "tag": "hobbies",
+        "patterns": [
+          "What hobbies should I try",
+          "Can you suggest a hobby",
+          "Any hobby recommendations",
+          "What are some good hobbies",
+          "Suggest me a hobby"
+        ],
+        "responses": [
+          "How about trying a new sport?",
+          "You might enjoy painting or drawing.",
+          "Consider picking up a musical instrument.",
+          "Gardening can be a relaxing hobby."
+        ]
+      },
+      {
+        "tag": "diy",
+        "patterns": [
+          "How to fix a leaking faucet",
+          "Any DIY tips",
+          "How to do home repairs",
+          "Suggest a DIY project",
+          "What are some DIY ideas"
+        ],
+        "responses": [
+          "Check online tutorials for fixing a leaking faucet.",
+          "DIY projects can be fun and rewarding.",
+          "You might enjoy building something with wood.",
+          "Home repairs can save you money, try learning new skills."
+        ]
+      },
+      {
+        "tag": "programming",
+        "patterns": [
+          "How to learn programming",
+          "Any tips for learning to code",
+          "What programming languages should I learn",
+          "Suggest a programming resource",
+          "How to become a programmer"
+        ],
+        "responses": [
+          "Start with a beginner-friendly language like Python.",
+          "Practice regularly to improve your coding skills.",
+          "Use online resources and tutorials to learn programming.",
+          "Join coding communities to get help and support.",
+          "Building projects is a great way to learn programming."
+        ]
+      },
+      {
+        "tag": "pets",
+        "patterns": [
+          "How to take care of a pet",
+          "Any tips for pet care",
+          "What do pets need",
+          "Suggest a pet for a small apartment",
+          "How to keep pets healthy"
+        ],
+        "responses": [
+          "Regular vet visits are important for pet health.",
+          "Provide a balanced diet for your pet.",
+          "Make sure your pet gets enough exercise.",
+          "Pets need love and attention to stay happy."
+        ]
+      },
+      {
+        "tag": "relationships",
+        "patterns": [
+          "How to maintain a healthy relationship",
+          "Any relationship advice",
+          "What are some tips for good relationships",
+          "How to improve communication in a relationship",
+          "Suggest ways to build trust in a relationship"
+        ],
+        "responses": [
+          "Communication is key to a healthy relationship.",
+          "Trust and respect are important in any relationship.",
+          "Spend quality time together to strengthen your bond.",
+          "Be supportive and understanding of your partner."
+        ]
+      },
+      {
+        "tag": "productivity",
+        "patterns": [
+          "How to be more productive",
+          "Any productivity tips",
+          "How to manage my time better",
+          "Suggest ways to increase productivity",
+          "What are some productivity hacks"
+        ],
+        "responses": [
+          "Prioritize your tasks and focus on the most important ones.",
+          "Take regular breaks to stay fresh and focused.",
+          "Use tools and apps to help manage your time.",
+          "Set clear goals and track your progress."
+        ]
+      },
+      {
+        "tag": "mindfulness",
+        "patterns": [
+          "How to practice mindfulness",
+          "Any tips for mindfulness",
+          "What are some mindfulness exercises",
+          "How to stay mindful",
+          "Suggest ways to be more present"
+        ],
+        "responses": [
+          "Meditation is a great way to practice mindfulness.",
+          "Take time to focus on your breath and relax.",
+          "Be aware of your thoughts and let them pass without judgment.",
+          "Practice gratitude and appreciate the present moment."
+        ]
+      },
+      {
+        "tag": "mental_health",
+        "patterns": [
+          "How to improve my mental health",
+          "Any tips for mental well-being",
+          "What are some mental health practices",
+          "How to reduce stress",
+          "Suggest ways to stay mentally healthy"
+        ],
+        "responses": [
+          "Regular exercise can improve mental health.",
+          "Talking to someone you trust can help reduce stress.",
+          "Practice relaxation techniques like deep breathing.",
+          "Make sure to get enough sleep for your mental well-being."
+        ]
+      },
+      {
+        "tag": "parenting",
+        "patterns": [
+          "How to be a better parent",
+          "Any parenting tips",
+          "What are some good parenting practices",
+          "How to communicate with my children",
+          "Suggest ways to build a strong parent-child relationship"
+        ],
+        "responses": [
+          "Spend quality time with your children.",
+          "Listen to your children's concerns and be supportive.",
+          "Set clear and consistent boundaries.",
+          "Encourage and praise your children's efforts."
+        ]
+      },
+      {
+        "tag": "language_learning",
+        "patterns": [
+          "How to learn a new language",
+          "Any tips for language learning",
+          "What are some good language learning methods",
+          "How to become fluent in a new language",
+          "Suggest a language learning resource"
+        ],
+        "responses": [
+          "Practice speaking regularly with native speakers.",
+          "Use language learning apps and tools.",
+          "Immerse yourself in the language by listening to music or watching movies.",
+          "Be consistent and practice daily to improve."
+        ]
+      },
+      {
+        "tag": "gardening",
+        "patterns": [
+          "How to start a garden",
+          "Any tips for gardening",
+          "What are some good gardening practices",
+          "How to take care of plants",
+          "Suggest ways to improve my garden"
+        ],
+        "responses": [
+          "Start with easy-to-grow plants.",
+          "Make sure your plants get enough sunlight and water.",
+          "Use good quality soil and fertilizers.",
+          "Prune your plants regularly to keep them healthy."
+        ]
+      },
+      {
+        "tag": "cooking",
+        "patterns": [
+          "How to improve my cooking skills",
+          "Any tips for cooking",
+          "What are some easy recipes",
+          "How to cook healthy meals",
+          "Suggest a cooking resource"
+        ],
+        "responses": [
+          "Start with simple recipes and gradually try more complex ones.",
+          "Use fresh ingredients for better taste and nutrition.",
+          "Practice makes perfect, so keep cooking regularly.",
+          "Watch cooking shows or tutorials for new ideas and techniques."
+        ]
+      },
+      {
+        "tag": "volunteering",
+        "patterns": [
+          "How to find volunteer opportunities",
+          "Any tips for volunteering",
+          "What are some good volunteer activities",
+          "How to get involved in my community",
+          "Suggest ways to volunteer"
+        ],
+        "responses": [
+          "Look for local organizations that need help.",
+          "Volunteering is a great way to give back to your community.",
+          "Find an activity that aligns with your interests and skills.",
+          "Volunteering can be a rewarding experience for you and those you help."
+        ]
+      },
+      {
+        "tag": "self_improvement",
+        "patterns": [
+          "How to improve myself",
+          "Any tips for self-improvement",
+          "What are some good self-improvement practices",
+          "How to become a better person",
+          "Suggest ways to enhance personal growth"
+        ],
+        "responses": [
+          "Set goals and work towards them consistently.",
+          "Read books and learn new skills.",
+          "Reflect on your actions and learn from your mistakes."
+        ]
+      }
+    ]
+}
